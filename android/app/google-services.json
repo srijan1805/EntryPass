@@ -1,0 +1,57 @@
+{
+  "project_info": {
+    "project_number": "90829227922",
+    "project_id": "entrypass-335409",
+    "storage_bucket": "entrypass-335409.appspot.com"
+  },
+  "web": {
+    "client_id": "90829227922-mibvt6nh3cp58fhp33onob3t101rka4v.apps.googleusercontent.com",
+    "project_id": "entrypass-335409",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "redirect_uris": [
+      "https://entrypass-dotnet-dev.azurewebsites.net/auth/google/callback"
+    ]
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90829227922:android:7027f6f677e549d054634b",
+        "android_client_info": {
+          "package_name": "com.uetrack.entrypass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90829227922-mibvt6nh3cp58fhp33onob3t101rka4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0W5YwJOb6IVjNKM0cPjzA8KQ3Zkk1y8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90829227922-mibvt6nh3cp58fhp33onob3t101rka4v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "90829227922-rcaocuvbud5u0iuc6a4lmk599ufa1ded.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.uetrack.entrypass"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

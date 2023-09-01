@@ -1,0 +1,72 @@
+
+
+
+default_platform(:android)
+
+platform :android do
+
+desc 'Build the Android application.'
+
+lane :build do |options|
+filename = options[:parameter1]
+sh "echo Link to  filename apk :" + filename
+buildenv = options[:buildenv]
+
+uploadfolder = "15kmPqZ-HDIEzMHsbbNL6WM1mSGfo3I0U"
+deploypath = "/var/lib/jenkins/workspace/entrypass_reactnative_android_dev/android/app/build/outputs/apk/release/app-release.apk"
+# EntryPass_react_native_android_1.0.#{filename}-release.apk"
+# yalahnow_react_native_android_1.0.#{filename}-release.apk"
+  
+if buildenv == "qa"
+   deploypath = "/var/lib/jenkins/workspace/entrypass_reactnative_android_dev/android/app/build/outputs/apk/release/EntryPass_react_native_android_1.0.#{filename}-release.apk"
+   uploadfolder = "15kmPqZ-HDIEzMHsbbNL6WM1mSGfo3I0U"
+end
+ 
+if buildenv == "uat"
+   deploypath = "/var/lib/jenkins/workspace/entrypass_reactnative_android_dev/android/apps/build/outputs/apk/release/EntryPass_react_native_android_1.0.#{filename}-release.apk"
+   uploadfolder = "15kmPqZ-HDIEzMHsbbNL6WM1mSGfo3I0U"
+end
+
+desc "#{filename}"
+#yarn(
+#    command: 'install',
+#    package_path: '../package.json'
+#    )
+    
+gradle(
+    task: 'clean',
+    task: 'assemble',
+    build_type: 'Release',
+    project_dir: './'
+    )
+
+upload_to_google_drive(
+    drive_keyfile: '/home/ubuntu/google_drive_service_account/poised-space-290101-b057a2e39420.json',
+    service_account: true,
+    folder_id: "#{uploadfolder}",
+    upload_files: ["#{deploypath}"]
+    )
+end
+
+
+
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Submit a new Beta Build to Crashlytics Beta"
+  lane :beta do
+    gradle(task: "clean assembleRelease")
+    crashlytics
+  
+    # sh "your_script.sh"
+    # You can also use other beta testing services here
+  end
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    gradle(task: "clean assembleRelease")
+    upload_to_play_store
+  end
+end
