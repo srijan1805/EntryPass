@@ -382,7 +382,7 @@ const Login = ({ navigation, ...props }) => {
                 BTNstyle={{ ...styles.buttonStyle }}
                 textStyle={{ ...styles.buttonTxt }}
               />
-              <Text style={styles.or}>{translation.Login.or}</Text>
+              {/* <Text style={styles.or}>{translation.Login.or}</Text> */}
               {/* <TouchableOpacity
                 style={{ marginTop: hp(0) }}
                 onPress={async () => {

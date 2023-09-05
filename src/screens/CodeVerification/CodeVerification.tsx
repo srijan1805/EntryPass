@@ -120,7 +120,7 @@ export default function CodeVerification({ route }) {
                 <Text style={styles.phonenumber}>
                   {translation.CodeVerification.enter_digit_code}
                 </Text>
-                <Text style={styles.phonenumber}>{isPhoneNo}</Text>
+                {/* <Text style={styles.phonenumber}>{isPhoneNo}</Text> */}
                 <OTPTextView
                   handleTextChange={(e) => {
                     if (e.length === 6) {

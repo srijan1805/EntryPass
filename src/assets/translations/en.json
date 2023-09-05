@@ -98,7 +98,7 @@
   },
   "CodeVerification": {
     "code_verification_tit": "Verification Code",
-    "enter_digit_code": "Enter the 6 digit code sent to",
+    "enter_digit_code": "Enter the 6 digit code sent to your phone number",
     "didt_receive_code": "Didn't receive the code? ",
     "resend": "Resend",
     "pls_enter_valid_otp": "Please enter a valid otp",
