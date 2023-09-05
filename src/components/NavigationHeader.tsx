@@ -113,7 +113,7 @@ export const MainNavigationHeader = ({ navigation, isDisabled = false }) => {
           >
             <Image
               style={styles.logo}
-              source={require("../assets/images/EP-Logo1.png")}
+              source={require("../assets/images/nav.png")}
             />
           </View>
         </View>
