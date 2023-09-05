@@ -305,7 +305,7 @@ const Login = ({ navigation, ...props }) => {
     <>
       <SafeAreaView style={styles.container}>
         <View style={styles.container}>
-          <ScrollView showsVerticalScrollIndicator={false}>
+          <ScrollView showsVerticalScrollIndicator={false} style={{flex: 1}} contentContainerStyle={{flexGrow: 1, paddingBottom: 16}}>
             <View style={styles.topLogoContainer}>
               <Image
                 source={require("../../assets/icons/logo.png")}
@@ -315,7 +315,7 @@ const Login = ({ navigation, ...props }) => {
                 {translation.Login.SmartPass}
               </Text>
             </View>
-            <KeyboardAvoidingView>
+            <KeyboardAvoidingView style={{flex: 1}}>
               <View style={styles.girlLogo}>
                 <Girl width={226} height={161} />
               </View>
@@ -383,14 +383,14 @@ const Login = ({ navigation, ...props }) => {
                 textStyle={{ ...styles.buttonTxt }}
               />
               <Text style={styles.or}>{translation.Login.or}</Text>
-              <TouchableOpacity
+              {/* <TouchableOpacity
                 style={{ marginTop: hp(0) }}
                 onPress={async () => {
                   // console.log('url =----->', url);
                   if (LocStatus) {
                     getOneTimeLocation();
                     try {
-                      /// **********Google Services*********************************** */
+                      /// **********Google Services***********************************
 
                       // GoogleSignin.configure();
                       GoogleSignin.configure({
@@ -462,8 +462,8 @@ const Login = ({ navigation, ...props }) => {
                     </Text>
                   </View>
                 </View>
-              </TouchableOpacity>
-              <TouchableOpacity
+              </TouchableOpacity> */}
+              {/* <TouchableOpacity
                 onPress={async () => {
                   if (LocStatus) {
                     getOneTimeLocation();
@@ -523,7 +523,7 @@ const Login = ({ navigation, ...props }) => {
                     {translation.Login.MicrosoftSignin}
                   </Text>
                 </View>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
 
               {Platform.OS === "ios" ? (
                 <TouchableOpacity onPress={() => onAppleButtonPress()}>
@@ -542,9 +542,8 @@ const Login = ({ navigation, ...props }) => {
             </KeyboardAvoidingView>
 
             <View style={styles.versionContainer}>
-              <Text style={styles.versionText}>{translation.Login.uems}</Text>
               <Text style={[styles.versionText, { marginTop: 5 }]}>
-                {`${translation.Login.version} ${getVersion()}`}
+                {`${translation.Login.version} 1.0`}
               </Text>
             </View>
           </ScrollView>
