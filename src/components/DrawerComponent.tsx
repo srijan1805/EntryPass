@@ -456,7 +456,7 @@ function DrawerComponent(props) {
               </View>
             </TouchableHighlight>
 
-            <TouchableHighlight
+            {/* <TouchableHighlight
               underlayColor={COLORS.PurpleButton}
               onPress={() => {
                 if (props.isDisabledDrawer) {
@@ -518,7 +518,7 @@ function DrawerComponent(props) {
                   {translation.DrawerNavigation.Vaccination}
                 </Text>
               </View>
-            </TouchableHighlight>
+            </TouchableHighlight> */}
 
             <TouchableHighlight
               underlayColor={COLORS.PurpleButton}
@@ -539,7 +539,7 @@ function DrawerComponent(props) {
             </TouchableHighlight>
 
             <View>
-              <TouchableHighlight
+              {/* <TouchableHighlight
                 underlayColor={COLORS.PurpleButton}
                 onPress={() => {
                   closeDrawer();
@@ -571,10 +571,10 @@ function DrawerComponent(props) {
                         color={COLORS.White}
                         style={{ marginTop: 0 }}
                       />
-                    </View> */}
+                      </View> ******* COMMENT
                   </View>
                 </View>
-              </TouchableHighlight>
+              </TouchableHighlight> */}
 
               {/* {islangVisible && (
                 <View>

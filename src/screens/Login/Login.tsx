@@ -312,7 +312,7 @@ const Login = ({ navigation, ...props }) => {
                 style={styles.topLogo}
               />
               <Text style={styles.topLogoText}>
-                {translation.Login.EntryPass}
+                {translation.Login.SmartPass}
               </Text>
             </View>
             <KeyboardAvoidingView>

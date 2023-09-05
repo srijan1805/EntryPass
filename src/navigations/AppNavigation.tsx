@@ -368,11 +368,11 @@ function Register() {
 
   return (
     <Stack.Navigator screenOptions={{ gestureEnabled: false }}>
-      <Stack.Screen
+      {/* <Stack.Screen
         name="SelectLanguage"
         component={SelectLanguage}
         options={{ headerShown: false }}
-      />
+      /> */}
       <Stack.Screen
         name="Login"
         component={Login}

@@ -59,7 +59,7 @@ const App = () => {
         if (result.shouldUpdate) {
           Alert.alert(
             "New Update Available!",
-            "Entrypass recommends that you update to the latest version.",
+            "Smartpass recommends that you update to the latest version.",
             [
               {
                 text: "Later",
@@ -83,7 +83,7 @@ const App = () => {
       PushNotification.createChannel(
         {
           channelId: "1", // (required)
-          channelName: "EntryPass", // (required)
+          channelName: "SmartPass", // (required)
           foreground: true,
           playSound: true, // (optional) default: true
           vibrate: true, // (optional) default: true. Creates the default vibration pattern if true.

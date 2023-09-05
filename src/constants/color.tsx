@@ -1,7 +1,7 @@
 const COLORS = {
-  Blue: "#665DE6",
-  LightBlue: "#bdb9eb",
-  Yellow: "#FFBD31",
+  Blue: "#128E2E",
+  LightBlue: "#A4E8C2",
+  Yellow: "#007ACC",
   Red: "#FB2F2F",
   Black: "#000000",
   White: "#FFFFFF",

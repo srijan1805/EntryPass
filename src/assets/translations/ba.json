@@ -14,7 +14,7 @@
     "failed_try_again": "Gagal mengambil butiran. Sila cuba lagi",
     "pls_enter_corr_id": "Sila masukkan ID yang betul",
     "signing_in": "Daftar Masuk",
-    "EntryPass": "Entrypass",
+    "SmartPass": "Smartpass",
     "uems": "A UEMS produk",
     "version": "Versi",
     "welcome": "selamat datang !",
@@ -29,7 +29,7 @@
 
   "Home": {
     "welcome": "Selamat datang!",
-    "entry_pass": "Entrypass",
+    "entry_pass": "Smartpass",
     "digital_id_card": "Kad Pengenalan Digital",
     "address": "Alamat",
     "address_vertification": "Pengesahan Alamat",
@@ -65,7 +65,7 @@
     "notif": "Pemberitahuan",
     "del_acc": "Hapus Akaun",
     "inactive_acc": "Akaun Tidak Aktif",
-    "inactive_desc1": "Terima kasih kerana log masuk ke Entrypass!!",
+    "inactive_desc1": "Terima kasih kerana log masuk ke Smartpass!!",
     "inactive_desc2": "Kami tidak menemui sebarang akaun yang ditandakan nama pada alamat e-mel ini",
     "please": "Tolonglah",
     "inactive_desc3": "tulis kepada pentadbir kami",
@@ -353,7 +353,7 @@
   },
   "InactiveUser": {
     "inactive_account": "Akaun Tidak Aktif",
-    "desc1": "Terima kasih kerana log masuk ke Entrypass!!",
+    "desc1": "Terima kasih kerana log masuk ke Smartpass!!",
     "desc2": "Kami tidak menemui mana-mana akaun yang ditandakan nama pada alamat e-mel ini",
     "desc3": "Tolonglah",
     "desc4": "tulis kepada pentadbir kami",

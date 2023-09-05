@@ -475,7 +475,7 @@ const Home = (props) => {
                               source={require("../../assets/icons/logo.png")}
                             />
                             <Text style={styles.entry_label}>
-                              {translation.Login.EntryPass}
+                              {translation.Login.SmartPass}
                             </Text>
                           </View>
                           <View>
@@ -527,6 +527,7 @@ const Home = (props) => {
                             justifyContent: "flex-start",
                             flexWrap: "wrap",
                             marginTop: hp(27),
+                            marginBottom: hp(16)
                           }}
                         >
                           <View
@@ -611,7 +612,7 @@ const Home = (props) => {
                               {translation.Home.attendence}
                             </Text>
                           </View>
-                          <View
+                          {/* <View
                             style={{
                               flexDirection: "column",
                               alignItems: "center",
@@ -650,8 +651,8 @@ const Home = (props) => {
                             <Text style={[styles.componentTitle, {}]}>
                               {translation.Home.art_test}
                             </Text>
-                          </View>
-                          <View
+                          </View> */}
+                          {/* <View
                             style={{
                               flexDirection: "column",
                               alignItems: "center",
@@ -676,13 +677,12 @@ const Home = (props) => {
                             <Text style={[styles.componentTitle, {}]}>
                               {translation.Home.Vaccination}
                             </Text>
-                          </View>
+                          </View> */}
                           <View
                             style={{
                               flexDirection: "column",
                               alignItems: "center",
                               marginVertical: hp(10),
-                              marginHorizontal: wp(15),
                             }}
                           >
                             <TouchableHighlight
@@ -699,7 +699,7 @@ const Home = (props) => {
                               </View>
                             </TouchableHighlight>
 
-                            <Text style={[styles.componentTitle, {}]}>
+                            <Text style={[styles.componentTitle, {width: "80%"}]}>
                               {translation.Home.gps_attendance}
                             </Text>
                           </View>

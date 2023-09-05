@@ -14,7 +14,7 @@
     "failed_try_again": "Failed to fetch detail.Please try again",
     "pls_enter_corr_id": "Please enter the correct ID",
     "signing_in": "Signing In",
-    "EntryPass": "Entrypass",
+    "SmartPass": "Smartpass",
     "uems": "A UEMS Product",
     "version": "Version",
     "welcome": "Welcome !",
@@ -29,7 +29,7 @@
 
   "Home": {
     "welcome": "Welcome!",
-    "entry_pass": "Entrypass",
+    "entry_pass": "Smartpass",
     "digital_id_card": "Digital Identity Card",
     "address": "Address",
     "address_vertification": "Address Verification",
@@ -65,7 +65,7 @@
     "notif": "Notifications",
     "del_acc": "Delete Account",
     "inactive_acc": "Inactive Account",
-    "inactive_desc1": "Thanks for logging to Entrypass!!",
+    "inactive_desc1": "Thanks for logging to Smartpass!!",
     "inactive_desc2": "We couldn't find any account tagged to this email address",
     "please": "Please ",
     "inactive_desc3": "write to our administrator ",
@@ -354,7 +354,7 @@
   },
   "InactiveUser": {
     "inactive_account": "Inactive Account",
-    "desc1": "Thanks for logging to Entrypass!!",
+    "desc1": "Thanks for logging to Smartpass!!",
     "desc2": "We couldn't find any account tagged to this email address",
     "desc3": "Please ",
     "desc4": "write to our administrator ",

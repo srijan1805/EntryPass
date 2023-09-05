@@ -35,13 +35,13 @@
 
 import LocalizedStrings from "react-native-localization";
 import english from "./en.json";
-import chinese from "./ch.json";
-import malai from "./ba.json";
+// import chinese from "./ch.json";
+// import malai from "./ba.json";
 
 const translation = new LocalizedStrings({
   en: english,
-  ch: chinese,
-  ma: malai,
+  // ch: chinese,
+  // ma: malai,
 });
 
 export default translation;
